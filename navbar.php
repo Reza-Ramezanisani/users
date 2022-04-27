@@ -10,6 +10,7 @@
       </div>
      <div class="links">
          <li><a href="index.php">خانه</a></li>
+         <li><a style='cursor: pointer;' onmouseover='sabad_gharid()'>سبد خرید</a></li>
          <li class="dropdown">
              <button class="btn-drop btn">لیست<i class="fas fa-caret-down"></i></button>
              <div class="dropdown-content">
@@ -36,7 +37,7 @@
      </div>
       
   </ul>
-  <div class="header-bg">
+  <div class="header-bg" style='background-image: url("img/brooke-lark-IDonmDWrXO8-unsplash.jpg");'>
       <form action="#" method="post" id="form_search" style="display: flex;justify-content: center;flex-direction: column;position: relative;width:80%;margin:0 auto">
           <div style="display: flex;justify-content: center;">
               <input type="search" name="food_search" onclick="Todo_play()" dir="rtl" id="food_search" autocomplete="off">

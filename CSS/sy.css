@@ -206,7 +206,7 @@ img {
 .exprore-foods .imgs {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 12px;
   -webkit-box-pack: center;
@@ -283,7 +283,7 @@ img {
 .menu-food .cards, .menu-food #more {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 12px;
   width: 80%;

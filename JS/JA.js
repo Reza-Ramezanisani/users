@@ -65,42 +65,42 @@ function switch_bg(x){
     x.classList.toggle('checked');
     document.body.classList.toggle('sm');
 }
-setInterval(() => {
-    let cards = document.getElementsByClassName('cards')[0];
-    review().then(suc=>cards.innerHTML = suc).catch(err=>cards.innerHTML = err);
-}, 2000);
-function review(){
-    return new Promise(function (resolve,reject) {
-        let xhr = new XMLHttpRequest();
-        xhr.open("GET",'products_server.php');
-        xhr.onload=()=>{
-            if(xhr.status===200 && xhr.readyState===4){
-                resolve(xhr.response);
-            }else{
-                reject(xhr.statusText);
-            }
-        }
-        xhr.send();
-    })
-}
-setInterval(() => {
-    let more = document.getElementById('more');
-    review().then(suc=>more.innerHTML = suc).catch(err=>more.innerHTML = err);
-}, 2000);
-function review(){
-    return new Promise(function (resolve,reject) {
-        let xhr = new XMLHttpRequest();
-        xhr.open("GET",'products_server.php');
-        xhr.onload=()=>{
-            if(xhr.status===200 && xhr.readyState===4){
-                resolve(xhr.response);
-            }else{
-                reject(xhr.statusText);
-            }
-        }
-        xhr.send();
-    })
-}
+// setInterval(() => {
+//     let cards = document.getElementsByClassName('cards')[0];
+//     review().then(suc=>cards.innerHTML = suc).catch(err=>cards.innerHTML = err);
+// }, 2000);
+// function review(){
+//     return new Promise(function (resolve,reject) {
+//         let xhr = new XMLHttpRequest();
+//         xhr.open("GET",'products_server.php');
+//         xhr.onload=()=>{
+//             if(xhr.status===200 && xhr.readyState===4){
+//                 resolve(xhr.response);
+//             }else{
+//                 reject(xhr.statusText);
+//             }
+//         }
+//         xhr.send();
+//     })
+// }
+// setInterval(() => {
+//     let more = document.getElementById('more');
+//     review().then(suc=>more.innerHTML = suc).catch(err=>more.innerHTML = err);
+// }, 2000);
+// function review(){
+//     return new Promise(function (resolve,reject) {
+//         let xhr = new XMLHttpRequest();
+//         xhr.open("GET",'products_server.php');
+//         xhr.onload=()=>{
+//             if(xhr.status===200 && xhr.readyState===4){
+//                 resolve(xhr.response);
+//             }else{
+//                 reject(xhr.statusText);
+//             }
+//         }
+//         xhr.send();
+//     })
+// }
 let btn_search = document.getElementById("btn_search");
 let input = document.getElementById("food_search");
 let todos = document.getElementsByClassName("TODOS")[0];

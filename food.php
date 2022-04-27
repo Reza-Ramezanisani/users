@@ -9,13 +9,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./../slick/slick/slick.css">
     <link rel="stylesheet" href="./../slick/slick/slick-theme.css">
-    <link rel="stylesheet" href="er.css">
-    <link rel="stylesheet" href="awite.css">
+    <?php include "link.php"?>
+   
     
     <script rel="stylesheet" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="search.js"></script>
+    <script src="http://localhost/order/users/JS/search.js"></script>
+
     
     <title>Food</title>
+    <style>
+        @media screen and (max-width:700px){
+               .menu-food .cards{
+                   display: grid;
+                   grid-template-columns: auto;
+                }
+                
+                .menu-food .cards .card .desc{
+                     display: flex;
+                   flex-direction: column;
+               }
+               .menu-food .cards .card .desc .img-card{
+                    width: 50%;margin: 0 auto;
+               }
+               .menu-food .cards .card .desc .text-card{
+                   width: 100%;
+                   border: 1px solid #000;
+               }
+            }
+
+
+    </style>
 </head>
 <body onload="clock()">
  <?php include "navbar.php";  ?>
@@ -29,12 +52,12 @@
         <h2 class="text-center">گالری</h2>
         <br>
         <div class="slick">
-            <div><img src="./img/menu-momo.jpg" alt=""></div>
-            <div><img src="./img/menu-burger.jpg" alt=""></div>
-            <div><img src="./img/menu-pizza.jpg" alt=""></div>
-            <div><img src="./img/momo.jpg" alt=""></div>
-            <div><img src="./img/pizza.jpg" alt=""></div>
-            <div><img src="./img/burger.jpg" alt=""></div>
+            <div><img style='object-fit:cover' src="./img/menu-momo.jpg" alt=""></div>
+            <div><img style='object-fit:cover' src="./img/menu-burger.jpg" alt=""></div>
+            <div><img style='object-fit:cover' src="./img/menu-pizza.jpg" alt=""></div>
+            <div><img style='object-fit:cover' src="./img/momo.jpg" alt=""></div>
+            <div><img style='object-fit:cover' src="./img/pizza.jpg" alt=""></div>
+            <div><img style='object-fit:cover' src="./img/burger.jpg" alt=""></div>
         </div>
     </div>
     <div class="menu-food" style="margin-top:0">
@@ -42,7 +65,10 @@
         <br>
       <h2 class="text-center">غذای دلخواهت رو سفارش بده</h2>
       <br>
-      <div class="cards"></div>
+      <div class="cards">
+    <?php  include "products_server.php"; ?>
+
+      </div>
         
             
             <br>
@@ -80,7 +106,8 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./../slick/slick/slick.min.js"></script>
-    <script src="JA.js"></script>
+    <script src="http://localhost/order/users/JS/JA.js"></script>
+    
    <script>
        $(document).ready(function () {
         $(".slick").slick({

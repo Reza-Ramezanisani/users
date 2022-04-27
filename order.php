@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script rel="stylesheet" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <?php include "link.php"?>
    
-    <script src="JQOrder.js"></script>
+    <script src="http://localhost/order/users/JS/JQOrder.js"></script>
 </head>
 <body onload="clock()">
     <ul class="navbar-top">
@@ -26,19 +27,15 @@
         </div>
        
        <div class="links">
-           <li><a href="#">Home</a></li>
+           <li><a href="#">خانه</a></li>
            <li class="dropdown">
-               <button class="btn-drop btn">List <i class="fas fa-caret-down"></i></button>
+               <button class="btn-drop btn">لیست<i class="fas fa-caret-down"></i></button>
                <div class="dropdown-content">
-                   <a href="#">1</a>
-                   <a href="#">2</a>
-                   <a href="#">3</a>
-                   <a href="#">4</a>
-               </div>
+                 <a href="send_msg.php">پیغامی داری بفرست</a>
+                 <a id="find" href="#">کجا هستیم ما</a>
+             </div>
            </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="food.html">Foods</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="food.html">غذا ها</a></li>
           <span onclick='my()' javascript='void(0);' class='icon' >
                   <div class="bar"></div>
                   <div class="bar"></div>
@@ -128,6 +125,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="DS.js"></script>
+    <script src="http://localhost/order/users/JS/DS.js"></script>
 </body>
 </html>
