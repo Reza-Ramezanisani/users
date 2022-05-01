@@ -10,10 +10,17 @@
       </div>
      <div class="links">
          <li><a href="index.php">خانه</a></li>
-         <li><a style='cursor: pointer;' onmouseover='sabad_gharid()'>سبد خرید</a></li>
+         <li class="dropdown">
+             <button class="btn-drop btn">سبد خرید<i class="fas fa-caret-down"></i></button>
+             <div class="dropdown-content d1" >
+                <div id="shop_card">
+                    سبد خرید خالی است
+                </div>
+             </div>
+         </li>
          <li class="dropdown">
              <button class="btn-drop btn">لیست<i class="fas fa-caret-down"></i></button>
-             <div class="dropdown-content">
+             <div class="dropdown-content d2">
                  <a href="send_msg.php">پیغامی داری بفرست</a>
                  <a id="find" href="#">کجا هستیم ما</a>
              </div>

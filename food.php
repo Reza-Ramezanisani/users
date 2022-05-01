@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if(count($_COOKIE) === 0){
+    echo   ' <p dir="rtl">  کوکی ها غیر فعال هستند برای ذخیره سبد خرید برای دفعات بعد آن را فعال کنید</p>';
+ }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +15,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./../slick/slick/slick.css">
     <link rel="stylesheet" href="./../slick/slick/slick-theme.css">
-    <?php include "link.php"?>
-   
-    
     <script rel="stylesheet" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="http://localhost/order/users/JS/search.js"></script>
+    <?php include "link.php"?>
 
     
     <title>Food</title>
     <style>
+        /* .dropdown .dropdown-content .shop_card{
+                   width: 400px;
+                   border: 4px solid #000;
+                   
+               } */
         @media screen and (max-width:700px){
                .menu-food .cards{
                    display: grid;
@@ -34,6 +43,10 @@
                .menu-food .cards .card .desc .text-card{
                    width: 100%;
                    border: 1px solid #000;
+               }
+               .dropdown-content .shop_card{
+                   width: 100%;
+                   border: 6px solid red;
                }
             }
 
@@ -83,6 +96,7 @@
         </div>
         <p class="text-center">All rights reserved. Designed By Reza</p>
     </div>
+    <p id="id"></p>
     
     
       
@@ -106,10 +120,13 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./../slick/slick/slick.min.js"></script>
-    <script src="http://localhost/order/users/JS/JA.js"></script>
+    <script src="http://localhost/order/users/JS/JAva.js"></script>
     
    <script>
+    
        $(document).ready(function () {
+        sabad_action('','');
+       
         $(".slick").slick({
             slidesToShow:4,
         slidesToScroll:2,
