@@ -150,7 +150,7 @@ if(isset($_POST['act'])){
                 }
                 
                 $item_data = json_encode($cart,JSON_UNESCAPED_UNICODE);
-                setcookie("shop",$item_data,time() + 8400);
+                setcookie("shop",$item_data,time() + (8400 * 30),"/");
             }
             break;
             case "remove":
@@ -162,7 +162,7 @@ if(isset($_POST['act'])){
                 }
                
                 $item_data = json_encode($cart,JSON_UNESCAPED_UNICODE);
-                setcookie("shop",$item_data,time() + 8400);
+                setcookie("shop",$item_data,time() + (8400 *30),"/");
 
                 break;
             case "empty":
@@ -226,7 +226,7 @@ if(isset($_COOKIE['shop'])){
 
        
         <span dir="rtl" id="total"> قیمت کلی :<?php echo $total_price ?>0 ريال</span>
-        <a href="http://localhost/order/users/shop.php" style="btn btn-danger">سفارش</a>
+        <a href="http://localhost/order/users/shop.php" id="sfaresh" style="btn btn-danger">سفارش</a>
 
    <?php }
 }

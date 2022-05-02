@@ -120,6 +120,16 @@
     object-fit: cover;
     border-radius: 34px;
 }
+#sfaresh{
+    display: none;
+}
+.Form{
+    border: 1px solid #000;
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    width: 50%;margin: 0 auto;
+}
 @media screen and (max-width:700px){
     .menu-food .cards,#result_search {
         display: flex;
@@ -180,6 +190,11 @@
     .exprore-foods .content .txt-content{
         margin-top: -10vw;
     }
+    .Form,.main{
+        width: 100%;
+        padding: 0 10px;
+    }
+    
 
  }
  
