@@ -112,6 +112,7 @@ if(isset($_POST['act'])){
 
 
     switch ($_POST['act']) {
+
         case 'add':
             if(!empty($_POST['qty'])){
                 
@@ -144,10 +145,11 @@ if(isset($_POST['act'])){
                         $cart[]=$item;
                         
                     }
-
-                  
+                    
+                    
                 }
-                $item_data = json_encode($cart);
+                
+                $item_data = json_encode($cart,JSON_UNESCAPED_UNICODE);
                 setcookie("shop",$item_data,time() + 8400);
             }
             break;
@@ -175,15 +177,18 @@ if(isset($_POST['act'])){
                 
     }
 
+   
     
     
 
 
 }
 if(isset($_COOKIE['shop'])){
+    // print_r($_COOKIE['shop']);
     $total_price=0;
     $cookie_data = stripslashes($_COOKIE['shop']);
     $cart = json_decode($cookie_data, true);
+    // print_r($cart);
     // print_r($cart);
     if(empty($cart)){
         echo 'سبد خالی است';
@@ -202,8 +207,10 @@ if(isset($_COOKIE['shop'])){
         <th>قیمت</th>
         </tr>
     <?php  
+   
     foreach ($cart as $key => $val) {
         $total_price+=$val['price']*$val['qty'];
+
         ?>
             <tr>
                 <td><?php echo $val['name'];?></td>

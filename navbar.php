@@ -44,17 +44,20 @@
      </div>
       
   </ul>
-  <div class="header-bg" style='background-image: url("img/brooke-lark-IDonmDWrXO8-unsplash.jpg");'>
-      <form action="#" method="post" id="form_search" style="display: flex;justify-content: center;flex-direction: column;position: relative;width:80%;margin:0 auto">
-          <div style="display: flex;justify-content: center;">
-              <input type="search" name="food_search" onclick="Todo_play()" dir="rtl" id="food_search" autocomplete="off">
-              <input type="submit" class='btn' id="btn_search"  value="سرچ">
-          </div>
-         <div class="TODOS" style="overflow: auto">
-             <span onclick="Todo_remove()" style="position: absolute;top:10%;font-size: 2em;;right:5%;z-index: 1px;;cursor: pointer;color:red;background: white;border-radius: 50%;">&times;</span>
-         </div>
-        </form>
+  <div class="header-bg" style='background-image: url("img/brooke-lark-IDonmDWrXO8-unsplash.jpg");position: relative;'>
+    <div class="TODOS" style="overflow: auto">
+        <span onclick="Todo_remove()" style="position: absolute;top:10%;right:5%;z-index: 1px;;cursor: pointer;color:red;background: white;border-radius: 50%;">&times;</span>
+    </div>
+        
+        <form action="#" method="post" id="form_search" style="display: flex;justify-content: center;flex-direction: column;position: relative;width:80%;margin:0 auto">
+                <div style="display: flex;justify-content: center;">
+                    <input type="search" name="food_search" onclick="Todo_play()" dir="rtl" id="food_search" autocomplete="off">
+                    <input type="submit" class='btn' id="btn_search"  value="سرچ">
+                </div>
+                </form>
+       
+      
   </div>
-  <div class="scroll">
+  <div class="scroll" style="z-index: 10">
       <i class="fas fa-home" style="color: white;"></i>
   </div>

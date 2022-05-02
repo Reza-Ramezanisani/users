@@ -3,7 +3,7 @@ function sabad_action(tis,id) {
     let act = tis.id;
      switch (act) {
         case "add":
-           queryString = {id:id,act:act,qty:$("#qty_"+id).val()};
+           queryString = {id:id,act:act,qty:$("#qty_"+id).val(),name:$("#name_"+id).text()};
            break;
            case "empty":
               queryString = {act:act};

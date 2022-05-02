@@ -1,4 +1,5 @@
 <?php
+require "db_menu.php";
 
 $item_array = array();
 array_column($item_array,"id");
@@ -29,3 +30,17 @@ if(isset($_COOKIE['shop'])){
         ';
 
     }}
+    $sql ='SELECT * FROM menu WHERE ID=65';
+        $re=mysqli_query($conn,$sql);
+        $res=mysqli_fetch_assoc($re);
+        
+        $item = array(
+            'name'=>$res['name_menu'],
+            'price'=>$res['price'],
+        );
+    $cart[]=$item;
+    print_r($item);
+    $item_data = json_encode($cart);
+    setcookie("s",$item_data,time() + 8400);
+    print_r($_COOKIE['s']);
+    

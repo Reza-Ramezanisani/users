@@ -76,13 +76,18 @@
     </div>
   </div>
   <div class="menu-food" style='margin-top: 450px;'>
+    <div class="tabs">
+            <?php  include "tabs.php"; ?>
+  
+        </div>
       <br>
       <br>
     <br>
-    <div class="cards"> 
-
+    <div class="cards " style="display: flex;justify-content: center;">
+      <h3 style="text-align: center;padding: 4px;" class="txt_cards" >هیچ محصولی  وجود ندارد</h3>
     <?php  include "products_server.php"; ?>
-    </div>
+
+      </div>
         <br>
         <br>
         <br>
@@ -116,7 +121,12 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-            <script src="http://localhost/order/users/JS/JAva.js"></script>
+            <script src="http://localhost/order/users/JS/jaVA.js"></script>
+            <script>
+                  $(document).ready(function () {
+                      sabad_action('','');
+                  });
+            </script>
     </body>
 
 

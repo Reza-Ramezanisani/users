@@ -50,3 +50,94 @@
     right: -16.9%;
     transform: rotate(45deg);
 }
+.tabs{
+    padding: 2px;
+    display: flex;
+    justify-content: end;
+}
+.btn_tab {
+    
+    background: rgb(209, 75, 75);
+    color: white;
+    padding: 5px;
+    border: 3px dashed rgb(110, 175, 228);
+    outline: none;
+    transition: .4s;
+}
+.btn_tab:hover{
+    background:rgb(110, 175, 228) ;
+    color: rgb(209, 75, 75);
+    border: 5px dashed rgb(224, 178, 178);
+    padding: 10px;
+}
+.btn_tab.act{
+    background-color: aqua;
+    
+}
+
+
+
+.menu-food .cards .card .desc .img-card{
+ 
+    width: 100%;
+}
+.menu-food .cards .card .desc{
+   
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+@media screen and (max-width:700px){
+    .menu-food .cards{
+        display: flex;
+        flex-direction: column;
+        
+     }
+     
+     .menu-food .cards .card .desc{
+          display: grid;
+          grid-template-columns:100%;
+    }
+    .menu-food .cards .card .desc .img-card{
+         width: 20%;
+         margin: 10px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+    }
+    .menu-food .cards .card .desc .text-card{
+        width: 100%;
+    }
+    .dropdown-content .shop_card{
+        width: 100%;
+        
+    }
+    .tabs{
+        flex-direction: column;
+    }
+    #form_search div{
+        flex-direction: column;
+    }
+    #form_search div input[type="search"],#form_search div #btn_search{
+        margin-top: 4px;
+        width: 100%;
+    }
+    .header-bg{
+        display: flex;
+        flex-direction:column-reverse;
+
+    }
+    .header-bg .TODOS {
+        z-index: 500;
+        
+    }
+ }
+ 
+ @media screen and (max-width:400px){
+    .menu-food .cards .card .desc .img-card{
+        width: 30%;
+        margin: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+   }
+ }

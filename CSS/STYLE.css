@@ -291,7 +291,7 @@ img {
           transform: rotateY(-180deg);
 }
 
-.menu-food {
+/* .menu-food {
   margin-top: 5vw;
   background: #f5eeee;
 }
@@ -367,7 +367,7 @@ img {
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
+} */
 
 .footer div a i {
   font-size: 1.5em;

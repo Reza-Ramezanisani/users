@@ -18,7 +18,7 @@
         }
         
        $output.='
-               <div class="card " style="position: relative;">'.$fa.'
+               <div class="card" style="position: relative;">'.$fa.'
                    
                    <div class="desc">
                        <div class="img-card" style="width: 80px;height: 80px"><img style="object-fit:cover" src="./../admin/PHP/upload_menu/'.$row['img'].'" alt=""></div>

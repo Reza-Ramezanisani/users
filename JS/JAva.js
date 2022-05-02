@@ -175,6 +175,34 @@ window.onscroll=()=>{
     
     
 }
+function TABS(x,y) {
+    let btn_tab=document.getElementsByClassName("btn_tab");
+    for (let index = 0; index < btn_tab.length; index++) {
+        btn_tab[index].classList.remove("act");
+        
+    }
+    x.classList.add("act");
 
+    let tabs = document.getElementsByClassName(y)[0];
+    let cards=document.getElementsByClassName('card');
+    for (let index = 0; index < cards.length; index++) {
+         cards[index].style.display="none";
+        
+    }
+    if(tabs){
+
+        for (let i = 0; i < cards.length; i++) {
+            if(cards[i].className === tabs.className){
+                cards[i].style.display="block";
+            }
+            
+        }
+        document.getElementsByClassName('txt_cards')[0].style.display='none';
+    }else{
+        document.getElementsByClassName('txt_cards')[0].style.display='block';
+
+    }
+}
+document.getElementsByClassName("btn_tab")[0].onclick();
 
 

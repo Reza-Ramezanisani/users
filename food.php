@@ -27,28 +27,7 @@ if(count($_COOKIE) === 0){
                    border: 4px solid #000;
                    
                } */
-        @media screen and (max-width:700px){
-               .menu-food .cards{
-                   display: grid;
-                   grid-template-columns: auto;
-                }
-                
-                .menu-food .cards .card .desc{
-                     display: flex;
-                   flex-direction: column;
-               }
-               .menu-food .cards .card .desc .img-card{
-                    width: 50%;margin: 0 auto;
-               }
-               .menu-food .cards .card .desc .text-card{
-                   width: 100%;
-                   border: 1px solid #000;
-               }
-               .dropdown-content .shop_card{
-                   width: 100%;
-                   border: 6px solid red;
-               }
-            }
+      
 
 
     </style>
@@ -78,7 +57,13 @@ if(count($_COOKIE) === 0){
         <br>
       <h2 class="text-center">غذای دلخواهت رو سفارش بده</h2>
       <br>
-      <div class="cards">
+      <div class="tabs">
+          <?php  include "tabs.php"; ?>
+
+      </div>
+
+      <div class="cards " style="display: flex;justify-content: center;">
+      <h3 style="text-align: center;padding: 4px;" class="txt_cards" >هیچ محصولی  وجود ندارد</h3>
     <?php  include "products_server.php"; ?>
 
       </div>
@@ -120,7 +105,7 @@ if(count($_COOKIE) === 0){
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./../slick/slick/slick.min.js"></script>
-    <script src="http://localhost/order/users/JS/JAva.js"></script>
+    <script src="http://localhost/order/users/JS/jaVA.js"></script>
     
    <script>
     
