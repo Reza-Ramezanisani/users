@@ -16,7 +16,7 @@ if(count($_COOKIE) === 0){
     <link rel="stylesheet" href="./../slick/slick/slick.css">
     <link rel="stylesheet" href="./../slick/slick/slick-theme.css">
     <script rel="stylesheet" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="http://localhost/order/users/JS/search.js"></script>
+    <script src="http://localhost/order/users/JS/Search.js"></script>
     <?php include "link.php"?>
 
     
@@ -38,7 +38,7 @@ if(count($_COOKIE) === 0){
     <br>
     <div id="awite"></div>
     <div id="find_ifram" display="none"></div>
-    <div id="result_search" style="display:none"><</div>
+    <div id="result_search" style="display:none;margin-top: 100px;"></div>
 
     <div class="exprore-foods">
         <h2 class="text-center">گالری</h2>
@@ -105,7 +105,7 @@ if(count($_COOKIE) === 0){
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="./../slick/slick/slick.min.js"></script>
-    <script src="http://localhost/order/users/JS/jaVA.js"></script>
+    <script src="http://localhost/order/users/JS/JaVA.js"></script>
     
    <script>
     

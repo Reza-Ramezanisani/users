@@ -34,10 +34,10 @@
          }
          
         $output.='
-                <div class="card CAT-'.$row['id'].'"   style="position: relative;display: none;">
+                <div class="card CAT-'.$row['id'].'"   style="position: relative;display: none;">'.$fa.'
                     
                     <div class="desc ">
-                        <div class="img-card "><img style="object-fit:cover;wwidth:100%;height:100%" src="./../admin/PHP/upload_menu/'.$row['img'].'" alt=""></div>
+                        <div class="img-card "><img style="object-fit:cover;width:100%;height:100%" src="./../admin/PHP/upload_menu/'.$row['img'].'" alt=""></div>
                          <div class="text-card " style="border-radius: 10px;;background: lightblue;height: 30vh;padding: 5px;overflow:auto;text-indent:12px">
                                 <h5 dir="rtl" id="name_'.$row['ID'].'">'.$row['name_menu'].'</h5>
                                 '.$link.'

@@ -57,7 +57,7 @@ function sabad_action(tis,id) {
    
    });
 }
-function qty_sabad(val,id){
+function qty_sabad(val,id,act){
    let elem=document.getElementsByClassName("QTY_sabad_"+id)[0];
    let elems=[...document.getElementsByClassName("QTY")];
    let total=document.getElementById("total");
@@ -67,25 +67,45 @@ function qty_sabad(val,id){
    elem.innerText=elemVal;
    let prices=[...document.getElementsByClassName("PRICE")];
    let x=0;
+   let e2=0;
+   for (let e1 = 0; e1 < elems.length; e1++) {
+      for (;e2 < prices.length;) {
+         x+= Number.parseInt(prices[e2].innerText)*Number.parseInt(elems[e1].innerText);
+         e2++
+         break;
+      }
+   }
+       
+      
+   // }
+   total.innerText=" قیمت کلی :"+x+"0 ريال";
+   // let COOKIE=document.getElementById("COOKIE").innerHTML;
+   // let nojson=JSON.parse(COOKIE);
+   // let ID=id;
+   // nojson.forEach(e => {
+   //    if(e['id']===String(ID)){
+   //       e['qty']=elemVal;
+   //    }
+   // });
+   // let json= JSON.stringify(nojson);
+    
+
+   jQuery.ajax({
+      url:"sabad.php",
+      type:"POST",
+      data:{id:id,act:act,qty:$("#qty_"+id).text()},
+     
+
+   });
    // elems.forEach(e1 => {
    //    prices.forEach(e2 => {
    //       x+=Number.parseInt(e2.innerText)*Number.parseInt(e1.innerText);
         
    //    });
    // });
-   for (let e1 = 0; e1 < elems.length; e1++) {
-      for (let e2 = 0; e2 < prices.length; e2++) {
-         x+= Number.parseInt(prices[e2].innerText)*Number.parseInt(elems[e1].innerText);
-         break;
-      }
-       
-      
-   // }
-   total.innerText=" قیمت کلی :"+x+"0 ريال";
 
    
    
-      }
 }
 
 

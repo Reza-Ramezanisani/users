@@ -124,7 +124,7 @@ btn_search.addEventListener("click",function () {
        todo.appendChild(trash);
        todo.appendChild(text);
        todos.appendChild(todo);
-        input.value="";
+        
        todo.addEventListener("click",function () {
        let toDos = document.getElementsByClassName("todo");
        input.value = text.innerHTML;

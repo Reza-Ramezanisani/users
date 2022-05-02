@@ -3,10 +3,10 @@ $(function () {
         e.preventDefault();
         let search = $("#food_search").val();
         if(search !==""){
-
-            $(".exprore-foods , .menu-food,.footer").fadeOut(100).ajaxStart(function () {
-                $("#awite").fadeIn(200);
-            });
+            $(".exprore-foods , .menu-food,.footer").fadeOut(100)
+            // $(".exprore-foods , .menu-food,.footer").fadeOut(100).ajaxStart(function () {
+            //     $("#awite").fadeIn(200);
+            // });
             $.post("search.php",{search:search},function (data,status) {
                 $("#awite").fadeOut(200);
                 $("#result_search").fadeIn(100);
