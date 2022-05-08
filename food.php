@@ -22,6 +22,9 @@ if(count($_COOKIE) === 0){
     
     <title>Food</title>
     <style>
+        #sfaresh{
+            display: block;
+        }
         /* .dropdown .dropdown-content .shop_card{
                    width: 400px;
                    border: 4px solid #000;

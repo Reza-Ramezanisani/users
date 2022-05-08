@@ -17,7 +17,7 @@ if(count($_COOKIE) === 0){
     <link rel="stylesheet" href="./../slick/slick/slick-theme.css">
     <script rel="stylesheet" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <?php include "link.php"?>
-<script src="http://localhost/order/users/JS/Shop.js"></script>
+<script src="http://localhost/order/users/JS/SHop.js"></script>
     
 
 
@@ -25,9 +25,9 @@ if(count($_COOKIE) === 0){
     
     <title>Food</title>
     <style>
-        body{
+        .main{
             
-            background-image: url("./img/r.avif");
+            background-image: linear-gradient(white,gold);
             background-repeat: no-repeat;
             background-size:cover ;
             border: none;
@@ -84,7 +84,7 @@ if(count($_COOKIE) === 0){
                 <div id="COOKIE" style="display: none;"><?php echo $_COOKIE['shop']; ?></div>
                 <h1 class="text-center text-white">خرید</h1>
                 <div id="shop_card">
-                     id=""
+                     
                     <?php
                     $cart=json_decode($_COOKIE['shop'],true);
                     $total_price=0;
@@ -130,8 +130,8 @@ if(count($_COOKIE) === 0){
                         <textarea name="address"" id="address" id="" cols="30" rows="10" placeholder="آدرس" ></textarea>
                     </div>
                     <div class="form-group ">
-                        <button style="border: 1px solid white;" id="submit_naghdy" class="btn btn-m text-white">خرید نقدی</button>
-                        <button style="border: 1px solid white;" class="btn btn-m text-white">خرید الکترونیکی</button>
+                        <button style="border: 1px solid white;" id="pool" class="pardaght btn btn-m text-white ">خرید نقدی</button>
+                        <button style="border: 1px solid white;" id="electro" class="pardaght btn btn-m text-white ">خرید الکترونیکی</button>
                     </div>
                 </form>
                 

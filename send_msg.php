@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script rel="stylesheet" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="Chat.css">
-    <link rel="stylesheet" href="er.css">
+    <link rel="stylesheet" href="http://localhost/order/users/CSS/sy.css">
+<link rel="stylesheet" href="http://localhost/order/users/CSS/s.css">
+<link rel="stylesheet" href="http://localhost/order/users/CSS/STYLe.css">
+<link rel="stylesheet" href="http://localhost/order/users/CSS/awITe.css">
 
-    <script src='J.js'></script>
+    <script src='http://localhost/order/users/JS/MSg.js'></script>
 
     <title>Food</title>
     
@@ -52,28 +55,31 @@
   </ul>
 
     <main>
+       
         <form action="#" method="post" id='form' autocomplete='off' enctype='multipart-form-data'>
-            <h3 class='text-center'>لطفا نام (به انگلیسی) و ایمیل را وارد کنید تا بتوانید پیغامی را ارسال کنید </h3>
+            <h3 class='text-center'> لطفا نام  و ایمیل را وارد کنید تا بتوانید پیغامی را ارسال کنید </h3>
             <div class="alert alert-dismissble" style='display: none;position: fixed;top: 0;left: 0;;right: 0;;width: 100%'><span style='color:yellow'>enter message<span></div>
             <div  style='margin: 0 auto;width: 50%;'>
                  <label for="a">نام (ضروری)</label>
-                 <input id='a' class='form-control'  autofocus oninput='msg()' name='name' pattern='[a-zA-Z].{10}' maxlength='10' required='required' type="text">
+                 <input  id='a' class='form-control'  autofocus oninput='msg()' name='name' pattern='[a-zA-Z].{10}' maxlength='10' required='required' type="text">
                  <label for="em">ایمیل (ضروری)</label>
-                 <input  class='form-control'   name='mail' id='em' oninput='msg()'   required='required' type="email">
+                 <input   class='form-control'   name='mail' id='em' oninput='msg()'   required='required' type="email">
                  <label for="b">عکستان (دلخواه)</label>
-                 <input class='form-control'  type="file" name="img" id="b" accept='image/*'>
+                 <input  class='form-control'  type="file" name="img" id="b" accept='image/*'>
                  <br>
-            </div>
-        </form>
+                </div>
+                
+            </form>
+            
         <div class="view_msg">
-            <div class="chat_box">
-
+            <div class="chat_box" style="margin-bottom: 100px;">
+                <?php  require_once "chat.php"; ?>
             </div>
 
             
-            <div class='bottom'>
-            <button id='submit' class='j' disabled style='cursor: not-allowed;'><i class="fas fa-location-arrow"></i></button>
-            <input type="text" class='px-2 j' style='cursor: not-allowed;' form='form' name='text' placeholder='  write message' disabled>
+            <div class='bottom' style="display:grid;grid-template-columns:25% 75%;position: fixed;bottom: 0;width: 100%;">
+            <button id='submit' class='j' disabled style='cursor: not-allowed;padding: 10px;'><i class="fas fa-location-arrow"></i></button>
+            <input type="text" class='px-2 j' style='cursor: not-allowed;padding: 10px;' form='form' name='text' placeholder='  write message' disabled>
             </div>
 
         </div>
@@ -85,7 +91,7 @@
 
 
 
-<script src="JA.js"></script>
+<script src="http://localhost/order/users/JS/JAVA.js"></script>
     
 </body>
 </html>

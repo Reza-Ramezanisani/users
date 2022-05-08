@@ -1,15 +1,15 @@
 $(function () {
-    $("#form_shop").submit(function (e) {
+    $(".pardaght").click(function (e) {
+        let Pardaght=this.id;
         
         e.preventDefault();
         let COOKIE=document.getElementById("COOKIE").innerHTML;
-
         
         $.ajax({
             type:"POST",
             url:"send_shop_server.php",
             dataType:"text",
-            data:{data:COOKIE,name:$("#name").val(),tel:$("#tel").val(),address:$("#address").val()},
+            data:{data:COOKIE,name:$("#name").val(),tel:$("#tel").val(),address:$("#address").val(),pool:Pardaght},
             success:function(data){
                 $("#fill_text").html(data).css({
                     "postition":"fixed",

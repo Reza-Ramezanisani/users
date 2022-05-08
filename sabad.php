@@ -150,7 +150,7 @@ if(isset($_POST['act'])){
                 }
                 
                 $item_data = json_encode($cart,JSON_UNESCAPED_UNICODE);
-                setcookie("shop",$item_data,time() + (8400 * 30),"/");
+                setcookie("shop",$item_data,time() + 8400 ,"/");
             }
             break;
             case "remove":
@@ -162,11 +162,11 @@ if(isset($_POST['act'])){
                 }
                
                 $item_data = json_encode($cart,JSON_UNESCAPED_UNICODE);
-                setcookie("shop",$item_data,time() + (8400 *30),"/");
+                setcookie("shop",$item_data,time() + 8400 ,"/");
 
                 break;
             case "empty":
-                setcookie("shop","",time() - 4000);
+                setcookie("shop","",time() - 4000,"/");
                 break;
                 // $cookie_data = stripslashes($_COOKIE['cart']);
                 // $cart = json_decode($cookie_data, true);

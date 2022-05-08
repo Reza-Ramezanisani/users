@@ -42,4 +42,19 @@
 
     $code_order = round(mt_rand(1000,9999));
     echo $code_order;
+
+    ?>
+    <table style="border: 1px solid #000;">
+        <tr>
+            <th colspan="3">re</th>
+            <th>asdas</th>
+            <th>asdas</th>
+            <th>asdas</th>
+        </tr>
+        <tr  style="border: 1px solid #000;">
+            <td>da</td>
+            <td>da</td>
+            <td>da</td>
+        </tr>
+    </table>
     

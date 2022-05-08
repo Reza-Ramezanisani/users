@@ -9,10 +9,22 @@ $(function () {
             contentType:false,
             processData:false,
             success:function (data) {
-                $(".alert").slideDown(100).html(data).addClass("alert-success").fadeOut(8000);
+                $(".alert").slideDown(100).html(data).addClass("alert-success").fadeOut(20000);
             },
             error:function (data) {
-                $(".alert").slideDown(100).html(data).addClass("alert-success");
+                $(".alert").slideDown(100).html(data).addClass("alert-success").fadeOut(20000);
+            },
+            complete:function () {
+                $.ajax({
+                    url:"chat.php",
+                    type:"POST",
+                    success:function (res) {
+                        setTimeout(() => {
+                     
+                           $(".chat_box").html(res);
+                        }, 1000);
+                    }
+                });
             }
         });
     });

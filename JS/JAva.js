@@ -41,7 +41,7 @@ function msg() {
     let input_name_msg=document.getElementById('a');
     let [btn,text]=document.getElementsByClassName('j');
     let email=document.getElementById('em');
-    if((input_name_msg.value.match(/[^\w\s]+/g) || input_name_msg.value.length === 0) || (email.value.length===0 || !email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) ){
+    if((input_name_msg.value.match(/[^\w\sاآبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهی]+/g) || input_name_msg.value.length === 0) || (email.value.length===0 || !email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) ){
         input_name_msg.style.border='1px dashed red';
         email.style.border='1px dashed red';
         btn.style.cursor='not-allowed';
@@ -57,7 +57,7 @@ function msg() {
         text.style.cursor='auto';
         text.disabled=false;
     }
-   console.log(input_name_msg.value.match(/[^\w\s]+/g),email.value.match(/[^\w\s]+/g));
+   console.log(input_name_msg.value.match(/[\w\sآبپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیا]+/g));
 
     
 }

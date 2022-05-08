@@ -28,7 +28,9 @@ if(count($_COOKIE) === 0){
                    
                } */
       
-
+ #sfaresh{
+     display: block;
+ }
 
     </style>
 </head>
@@ -41,7 +43,7 @@ if(count($_COOKIE) === 0){
     <div id="result_search" style="display:none"><</div>
 
     <div class="exprore-foods">
-      <div class="content">
+      <div class="content" style="height: auto;overflow: auto;">
           <div class="img-content"> <img style="width:100%;height:100%;object-fit:content" src="./img/pizza.jpg" alt="" srcset=""> </div>
           <div class="txt-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam, officiis molestiae libero quod deleniti eius? Ducimus provident corporis vero dignissimos maiores? Quas modi impedit ad totam harum est reiciendis.
           Repudiandae doloribus dignissimos ipsa ipsam, possimus, ea porro ratione obcaecati asperiores ex nam sed repellat molestiae cum eum in ullam provident quos magni quidem commodi fuga eligendi tempora? Asperiores, vero.
@@ -54,7 +56,7 @@ if(count($_COOKIE) === 0){
           Dolores numquam est pariatur ducimus, tempore hic, quod deserunt ex, perspiciatis voluptate tempora repellat sint commodi iste! Odit dignissimos sapiente necessitatibus, placeat sequi voluptas eum quas quidem, molestiae optio voluptatem.
           Ab odio qui cum illum reprehenderit minus. Debitis ipsa modi quia quaerat delectus corporis eius rem non mollitia itaque quae, alias fugit! Expedita perferendis commodi eveniet ipsum veritatis cumque porro.;object-fit:content</div>
       </div>
-      <div class="content">
+      <div class="content" style="height: auto;overflow: auto;">
           <div class="img-content"> <img style="width:100%;height:100%;object-fit:content" src="./img/a.jpg" alt="" srcset=""> </div>
           <div class="txt-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam, officiis molestiae libero quod deleniti eius? Ducimus provident corporis vero dignissimos maiores? Quas modi impedit ad totam harum est reiciendis.
           Repudiandae doloribus dignissimos ipsa ipsam, possimus, ea porro ratione obcaecati asperiores ex nam sed repellat molestiae cum eum in ullam provident quos magni quidem commodi fuga eligendi tempora? Asperiores, vero.
@@ -67,8 +69,8 @@ if(count($_COOKIE) === 0){
           Dolores numquam est pariatur ducimus, tempore hic, quod deserunt ex, perspiciatis voluptate tempora repellat sint commodi iste! Odit dignissimos sapiente necessitatibus, placeat sequi voluptas eum quas quidem, molestiae optio voluptatem.
           Ab odio qui cum illum reprehenderit minus. Debitis ipsa modi quia quaerat delectus corporis eius rem non mollitia itaque quae, alias fugit! Expedita perferendis commodi eveniet ipsum veritatis cumque porro.;object-fit:content</div>
       </div>
-      <div class="content">
-          <div class="img-content"> <img style="width:100%;height:100%;object-fit:content" src="./img/BG.avif"  alt="" srcset=""> </div>
+      <div class="content" style="height: auto;overflow: auto;">
+          <div class="img-content"> <img style="width:100%;height:100%;object-fit:content" src="./img/BG.avif"  alt="عکس در این مرورگر پشتیبانی نمی شود" srcset=""> </div>
           <div class="txt-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quibusdam, officiis molestiae libero quod deleniti eius? Ducimus provident corporis vero dignissimos maiores? Quas modi impedit ad totam harum est reiciendis.
           Repudiandae doloribus dignissimos ipsa ipsam, possimus, ea porro ratione obcaecati asperiores ex nam sed repellat molestiae cum eum in ullam provident quos magni quidem commodi fuga eligendi tempora? Asperiores, vero.
           Ullam deserunt, eligendi earum nam, unde aut nemo distinctio veritatis incidunt, harum deleniti. Deleniti provident vero, ut molestiae architecto esse voluptates! Sapiente vero non cum porro? Architecto debitis vitae aut?
@@ -78,7 +80,7 @@ if(count($_COOKIE) === 0){
           Odio excepturi sequi, asperiores iste quis repudiandae adipisci perspiciatis in iusto quasi, architecto velit aliquid molestiae et dolore soluta! Quo similique cupiditate velit natus! Quisquam pariatur in dolorem placeat laborum.
           Odit necessitatibus pariatur inventore cumque? Non, illo doloribus. Modi delectus molestias, molestiae dolore incidunt nesciunt et reiciendis iste officia corporis sequi laboriosam natus nulla sapiente impedit illo dolores est blanditiis.
           Dolores numquam est pariatur ducimus, tempore hic, quod deserunt ex, perspiciatis voluptate tempora repellat sint commodi iste! Odit dignissimos sapiente necessitatibus, placeat sequi voluptas eum quas quidem, molestiae optio voluptatem.
-          Ab odio qui cum illum reprehenderit minus. Debitis ipsa modi quia quaerat delectus corporis eius rem non mollitia itaque quae, alias fugit! Expedita perferendis commodi eveniet ipsum veritatis cumque porro.;object-fit:content</div>
+          Ab odio qui cum illum reprehenderit minus. Debitis ipsa modi quia quaerat delectus corporis eius rem non mollitia itaque quae, alias fugit! Expedita perferendis commodi eveniet ipsum veritatis cumque porro.</div>
       </div>
     </div>
    

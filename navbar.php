@@ -59,5 +59,5 @@
       
   </div>
   <div class="scroll" style="z-index: 10">
-      <i class="fas fa-home" style="color: white;"></i>
+      <i class="fas fa-arrow-alt-circle-up" style="color: white;"></i>
   </div>
